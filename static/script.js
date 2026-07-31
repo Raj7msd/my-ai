@@ -20,7 +20,7 @@ function processMessage() {
         if (isFirstMessage){
             const brandHeader = document.getElementById("ai-brand-name");
             if (brandHeader) {
-                brandHeader.innerText = "Raj-AI";   // Top-left mein jo naam dikhana hai
+                brandHeader.innerText = "Aakarshi";   // Top-left mein jo naam dikhana hai
             }
             isFirstMessage = false; // Flag false kiya taaki agle messages par naam baar-baar na badle
         }
@@ -38,7 +38,7 @@ function processMessage() {
         userMessageDiv.style.maxWidth = "80%";
         userMessageDiv.style.fontSize = "18px";
         userMessageDiv.style.fontFamily = "Arial, sans-serif";
-        userMessageDiv.innerHTML = `<strong>Raj:</strong> ${messageText}`;
+        userMessageDiv.innerHTML = `<strong>Aakarshi:</strong> ${messageText}`;    // user ka name msg ke aage
         
         // Append: Chat window ke niche joda
         chatWindow.appendChild(userMessageDiv);
